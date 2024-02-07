@@ -1,0 +1,53 @@
+header{
+    display: flex;
+    padding: 12px;
+    position: fixed;
+    background: transparent;
+    justify-content: space-between;
+    width: 100%;
+}
+.left{
+    display: flex;
+    justify-content: center;
+    padding-left: 25px;
+    gap: 15px;
+}
+.left i{
+    font-size: 30px;
+    height: 40px;
+    color: #fff;
+}
+.left h3{
+    font-size: 30px;
+    color: #fff;
+}
+
+.right{
+    display: flex;
+    justify-content: center;
+    padding-right: 25px;
+    gap: 15px;
+}
+.right button{
+    font-size: 18px;
+    border-radius: 30px;
+    padding: 10px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+.login{
+    color: #000;
+    background: #fff;
+}
+.signup{
+    color: #fff;
+    background: #000;
+}
+.login:hover{
+    background: wheat;
+    cursor: pointer;
+}
+.signup:hover{
+    background: grey;
+    cursor: pointer;
+}
