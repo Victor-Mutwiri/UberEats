@@ -4,11 +4,11 @@ import Countries from '../countries.json'
 import delivery from '../assets/images/delivery.jpg'
 import work from '../assets/images/work.jpg'
 import chef from '../assets/images/chef.jpg'
-import Appstore from '../assets/images/Apple.svg'
-import Playstore from '../assets/images/Android.png'
+import appstore from '../assets/images/apple.svg'
+import playstore from '../assets/images/android.png'
 
 const Home = () => {
-    /* const position = {lat: 53.53, lng:18} */
+
   return (
     <div className="home">
 
@@ -78,8 +78,8 @@ const Home = () => {
             <div className="links">
                 <h3>Uber <strong>Eats</strong></h3>
                 <div className="banners">
-                    <img src={Appstore} alt="App Store" />
-                    <img src={Playstore} alt="PlayStore" width={140}/>
+                    <img src={appstore} alt="App Store" />
+                    <img src={playstore} alt="PlayStore" width={140}/>
                 </div>
             </div>
             <div className="socials">
