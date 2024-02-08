@@ -6,7 +6,15 @@
     background-size: cover;
     background-position: center;
     height: 100vh;
+    margin-bottom: 50px;
 }
+hr{
+    /* border: none; */
+    height: 1px;
+    color: #EEE;
+    opacity: 0.3;
+}
+/* These are styles for section one with the background image */
 .top{
     margin-top: 170px;
     align-items: flex-start;
@@ -15,7 +23,7 @@
 .top h3{
     color: #fff;
     font-size: 50px;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 25px;
 }
 .top span, .top span a{
@@ -54,11 +62,12 @@
     border: none;
 }
 
+/* These are styles for the next section with three images after scrolling */
 .bottom{
     display: flex;
     width: 100%;
     /* width: calc(33.33% - 40px); */
-    margin-top: 400px;
+    margin-top: 280px;
     margin-bottom: 130px;
     gap: 20px;
     justify-content: space-evenly;
@@ -94,15 +103,18 @@
     font-size: 18px;
 }
 
+/* styles for the section with many cities including the map */
+.country{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 70px;
+}
 .cities{
     display: flex;
     flex-direction: column;
     margin-bottom: 70px;
 }
-.country{
-    display: flex;
-    flex-direction: column;
-}
+/* titles style is shared by two classes: one in country and one in cities */
 .title{
     display: flex;
     justify-content: space-between;
@@ -132,4 +144,84 @@
 .countries li a{
     text-decoration: none;
     color: #000;
+}
+
+/* styles for the second last section */
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.links h3{
+    font-size: 30px;
+}
+.banners{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+.socials{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 80px;
+}
+.socials li{
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 30px;
+    list-style: none;
+    text-decoration: none;
+}
+.socials a{
+    text-decoration: none;
+    color: #000;
+}
+.socials a:hover{
+    text-decoration: underline;
+}
+
+/* styles for the last section */
+
+.end{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+.media{
+    display: flex;
+    align-items: start;
+    gap: 15px;
+    font-size: 22px;
+}
+.conclusion{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 100px;
+}
+.conditions{
+    display: flex;
+    gap: 22px;
+    justify-content: right;
+    /* text-align: right; */
+    /* padding-left: 150px; */
+}
+.conditions a{
+    text-decoration: none;
+    color: #000;
+}
+.conditions a:hover{
+    text-decoration: underline;
+}
+.last{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
 }
