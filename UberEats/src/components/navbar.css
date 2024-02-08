@@ -1,3 +1,14 @@
+@keyframes slideInFromLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+
 header{
     display: flex;
     padding: 12px;
@@ -6,6 +17,29 @@ header{
     justify-content: space-between;
     width: 100%;
 }
+header.with-background {
+    background: #ffffff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+header.with-background i{
+    color: #000;
+}
+header.with-background h3{
+    color: #000;
+}
+header input{
+    padding: 15px;
+    font-size: 15px;
+    width: 500px;
+    border: none;
+    display: none;
+}
+header input.show{
+    display: block;
+    background: #EEEEEE;
+    animation: slideInFromLeft 0.55s ease forwards;
+}
+
 .left{
     display: flex;
     justify-content: center;
