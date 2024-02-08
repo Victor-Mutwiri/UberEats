@@ -1,3 +1,4 @@
+
 import './home.css'
 import Countries from '../countries.json'
 import delivery from '../assets/images/delivery.jpg'
@@ -7,6 +8,7 @@ import Appstore from '../assets/images/Apple.svg'
 import Playstore from '../assets/images/Android.png'
 
 const Home = () => {
+    /* const position = {lat: 53.53, lng:18} */
   return (
     <div className="home">
 
@@ -51,7 +53,8 @@ const Home = () => {
                 <h2>Cities near me</h2>
                 <a href="#">View all 500+ cities</a>
             </div>
-            <div className="map">Map goes Here</div>
+            <div className="map">Map goes Here "To be added later"</div>
+            
         </section>
 
         {/* This is the section with countries */}
@@ -114,7 +117,7 @@ const Home = () => {
                 </div>
                 <div className="last">
                     <span>
-                        This site is protected by reCAPTCHA and the Google <a href="">Privacy Policy</a> and Terms of Service apply.
+                        This site is protected by reCAPTCHA and the Google <a href="#">Privacy Policy</a> and Terms of Service apply.
                     </span>
                     <span>
                     <i className='bx bx-copyright'/> 2024 Uber Technologies Inc.
