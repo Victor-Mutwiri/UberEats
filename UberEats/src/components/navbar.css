@@ -16,6 +16,7 @@ header{
     background: transparent;
     justify-content: space-between;
     width: 100%;
+    z-index: 1000;
 }
 header.with-background {
     background: #ffffff;

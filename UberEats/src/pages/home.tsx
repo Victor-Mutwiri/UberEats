@@ -11,9 +11,7 @@ const Home = () => {
 
   return (
     <div className="home">
-
         {/* This is the main section that you see on the landing page */}
-
         <section className='top'>
             <h3>Order delivery near You</h3>
             <div className="inputs">

@@ -1,4 +1,5 @@
 .home{
+    position: relative;
     display: flex;
     flex-direction: column;
     padding: 45px;
@@ -7,6 +8,7 @@
     background-position: center;
     height: 100vh;
     margin-bottom: 50px;
+    width: 100%;
 }
 hr{
     /* border: none; */
@@ -227,7 +229,13 @@ hr{
 
 @media (max-width: 640px){
     .home{
-        max-width: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 430px;
+        /* max-width: 450px; */
+        margin-bottom: 10px;
+        height: 40vh;
     }
     .top{
         display: flex;
@@ -244,28 +252,110 @@ hr{
     }
     .inputs{
         display: flex;
-        flex-direction: row;
-        gap: 8px;
+        flex-direction: column;
+        gap: 5px;
         margin-bottom: 20px;
     }
     .inputs input{
-        /* padding: 5px; */
+        padding: 10px;
+        margin-bottom: 10px;
         font-size: 14px;
-        width: 200px;
+        width: 250px;
         border: none;
+        border-radius: 30px;
     }
     .inputs select{
         padding: 10px;
         font-size: 12px;
-        width: 80px;
+        width: 150px;
         border: none;
+        border-radius: 15px;
     }
     .inputs button{
+        width: 40%;
         font-size: 12px;
         background: #000;
         color: #fff;
         border: none;
         border-radius: 10px;
         padding: 5px;
+    }
+    .top span{
+        display: none;
+    }
+    .bottom{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        gap: 20px;
+        justify-content: space-evenly;
+        /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+        padding: 5px;
+    }
+    .cities{
+        display: none;
+    }
+    .country{
+        display: none;
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        margin-top: 15px;
+        margin-bottom: 25px;
+    }
+    .footer .socials{
+        display: none;
+    }
+    .footer .links{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+    .links h3{
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+    .end{
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+        margin-bottom: 40px;
+    }
+    .conclusion{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 25px;
+    }
+    .media{
+        align-self: center;
+    }
+    .media i{
+        display: flex;
+        flex-direction: row;
+        color: #000;
+        justify-content: center;
+        gap: 15px;
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+    .conditions{
+        display: flex;
+        gap: 15px;
+        justify-content:start;
+        /* text-align: right; */
+        padding-left: 2px;
+    }
+    .conditions a{
+        align-items: flex-start;
+    }
+    .last{
+        display: flex;
+        flex-direction: column;
+        align-items:start;
     }
 }
