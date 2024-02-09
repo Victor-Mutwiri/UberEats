@@ -1,6 +1,5 @@
 import './menupage.css'
 
-
 interface MenuPageProps {
     isOpen: boolean;
     onClose: () => void;

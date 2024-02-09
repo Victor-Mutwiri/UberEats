@@ -97,3 +97,31 @@ header input.show{
     background: #1F1D1B;
     cursor: pointer;
 }
+
+@media (max-width: 640px){
+    header{
+        position: fixed;
+        width: 100%;
+        align-items: left;
+        /* justify-content: space-evenly; */
+    }
+    header input.show{
+        display: none;
+    }
+    .left{
+        align-items: center;
+        padding-left: 10px;
+        gap: 10px;
+    }
+    .left h3{
+        font-size: 18px;
+        color: #fff;
+    }
+    .right button{
+        font-size: 13px;
+        border-radius: 150px;
+        padding: 7px;
+        border: none;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    }
+}

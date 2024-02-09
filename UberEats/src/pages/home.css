@@ -224,3 +224,48 @@ hr{
     align-items: flex-start;
     justify-content: space-between;
 }
+
+@media (max-width: 640px){
+    .home{
+        max-width: 450px;
+    }
+    .top{
+        display: flex;
+        flex-direction: column;
+        margin-top: 120px;
+        align-items: flex-start;
+        /* padding-left: 0px; */
+    }
+    .top h3{
+        text-align: left;
+        font-size: 25px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+    .inputs{
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        margin-bottom: 20px;
+    }
+    .inputs input{
+        /* padding: 5px; */
+        font-size: 14px;
+        width: 200px;
+        border: none;
+    }
+    .inputs select{
+        padding: 10px;
+        font-size: 12px;
+        width: 80px;
+        border: none;
+    }
+    .inputs button{
+        font-size: 12px;
+        background: #000;
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        padding: 5px;
+    }
+}
