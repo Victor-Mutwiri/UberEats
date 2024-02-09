@@ -1,11 +1,11 @@
+import './loginnav.css'
 
-
-const loginnav = () => {
+const Loginnav = () => {
   return (
-    <header>
-            <h3>Uber <strong>Eats</strong></h3>
-    </header>
+    <nav className="loginnav">
+      <h3>Uber <strong className='green'>Eats</strong></h3>
+    </nav>
   )
 }
 
-export default loginnav
+export default Loginnav

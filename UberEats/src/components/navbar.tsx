@@ -1,9 +1,11 @@
 import './navbar.css'
 import {useState, useEffect} from 'react'
+import {Link, useLocation} from 'react-router-dom'
 
 const Navbar = () => {
   const [showInput, setShowInput] = useState(false)
   const [showNavbarBackground, setShowNavbarBackground] = useState(false);
+  const location = useLocation()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,6 +29,10 @@ const Navbar = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  if (location.pathname === '/login' || location.pathname ==='/signup') {
+    return null;
+  }
   return (
     <header className={showNavbarBackground ? 'with-background' : ''}>
         <div className="left">
@@ -35,8 +41,13 @@ const Navbar = () => {
         </div>
         <input type="text" placeholder="Enter delivery address" className={showInput ? 'show' : ''}/>
         <div className="right">
-            <button className='login'><i className='bx bxs-user'></i> Log in</button>
-            <button className='signup'>Sign up</button>
+            <button className='login'>
+              <Link to="/login"><i className='bx bxs-user'></i>Log in</Link>
+            </button>
+            <button className='signup'>
+              <Link to="/signup">Sign up</Link>
+            </button>
+            {/* <button className='signup'>Sign up</button> */}
         </div>
     </header>
   )

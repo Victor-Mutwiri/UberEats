@@ -1,0 +1,17 @@
+nav{
+    /* display: flex; */
+    position: fixed;
+    background: #000;
+    text-align: left;
+    width: 100%;
+}
+nav h3{
+    color: #fff;
+    font-size: 28px;
+    padding: 16px 0 16px 70px;
+    /* padding-left: 70px;
+    padding-top: 10px; */
+}
+.green{
+    color: #06C167;
+}

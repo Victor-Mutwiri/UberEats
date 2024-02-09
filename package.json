@@ -2,5 +2,8 @@
   "devDependencies": {
     "@types/node": "^20.11.16",
     "file-loader": "^6.2.0"
+  },
+  "dependencies": {
+    "react-router-dom": "^6.22.0"
   }
 }

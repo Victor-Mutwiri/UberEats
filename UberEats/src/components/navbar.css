@@ -30,7 +30,7 @@ header.with-background h3{
 header input{
     padding: 15px;
     font-size: 15px;
-    width: 500px;
+    width: 700px;
     border: none;
     display: none;
 }
@@ -73,6 +73,14 @@ header input.show{
     color: #000;
     background: #fff;
 }
+.login a{
+    text-decoration: none;
+    color: #000;
+}
+.signup a{
+    text-decoration: none;
+    color: #fff;
+}
 .signup{
     color: #fff;
     background: #000;
@@ -82,6 +90,6 @@ header input.show{
     cursor: pointer;
 }
 .signup:hover{
-    background: grey;
+    background: #1F1D1B;
     cursor: pointer;
 }
