@@ -46,11 +46,11 @@ header input.show{
     padding-left: 25px;
     gap: 15px;
 }
-.left i{
+/* .left i{
     font-size: 30px;
     height: 40px;
     color: #fff;
-}
+} */
 .left h3{
     font-size: 30px;
     color: #fff;
@@ -75,6 +75,10 @@ header input.show{
 }
 .login a{
     text-decoration: none;
+    color: #000;
+}
+.login i{
+    font-size: 15px;
     color: #000;
 }
 .signup a{

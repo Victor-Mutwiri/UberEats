@@ -1,6 +1,7 @@
 import './navbar.css'
 import {useState, useEffect} from 'react'
 import {Link, useLocation} from 'react-router-dom'
+import Menu from './menu'
 
 const Navbar = () => {
   const [showInput, setShowInput] = useState(false)
@@ -36,13 +37,14 @@ const Navbar = () => {
   return (
     <header className={showNavbarBackground ? 'with-background' : ''}>
         <div className="left">
-            <i className='bx bx-menu'></i>
+            {/* <i className='bx bx-menu'></i> */}
+            <Menu/>
             <h3>Uber <strong>Eats</strong></h3>
         </div>
         <input type="text" placeholder="Enter delivery address" className={showInput ? 'show' : ''}/>
         <div className="right">
             <button className='login'>
-              <Link to="/login"><i className='bx bxs-user'></i>Log in</Link>
+              <Link to="/login"><i className='bx bxs-user'/> Log in</Link>
             </button>
             <button className='signup'>
               <Link to="/signup">Sign up</Link>
