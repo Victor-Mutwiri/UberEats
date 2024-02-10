@@ -104,7 +104,7 @@ header input.show{
         position: fixed;
         width: 100%;
         align-items: left;
-        /* justify-content: space-evenly; */
+        justify-content: space-around;
     }
     header input.show{
         display: none;

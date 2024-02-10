@@ -18,8 +18,8 @@ const Home = () => {
                 {/* <i className='bx bx-map'/> */}
                 <input type="text" placeholder="Enter delivery address"/>
                 <select name="" className="options">
-                    <option value=""><button><i className='bx bxs-time'></i>Deliver now</button></option>
-                    <option value=""><button><i className='bx bxs-calendar'></i>Schedule for later</button></option>
+                    <option value=""><button>Deliver now</button></option>
+                    <option value=""><button>Schedule for later</button></option>
                 </select>
                 <button>Find Food</button>
             </div>
